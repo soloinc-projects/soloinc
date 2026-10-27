@@ -33,6 +33,7 @@
   <li>The keys you add for a model provider or a connector, in the app's own private storage on the device. The device key that signs each of your answers is kept in the iOS Keychain or the Android Keystore (on Windows, protected for your Windows user).</li>
   <li>A search index of your company's content, so you can find a decision from the system's search (Spotlight on iPhone, iPad and Mac; App Search on Android, which only SoloINC itself reads).</li>
   <li>The app's own event log (for example "a decision was answered", "a routine was stopped"), kept in monthly files on the device for 30 days; the app deletes older lines when it starts. Records of each model call stay on the device. Those records and the record itself are kept until you erase them.</li>
+  <li>Reports of the app's own crashes, written on the device when it crashes and kept until you erase them. They are never sent anywhere.</li>
   <li>Your purchase of the unlock, mirrored on the device so the app works offline.</li>
   <li>If you pair with the SoloINC console on a Mac or PC, a key for that pairing.</li>
 </ul>
@@ -44,14 +45,14 @@
   <li><strong>A model.</strong> If you add your own key, the text the agents and the Managing Agent need is sent to that provider, under your own agreement with them.</li>
   <li><strong>Connectors.</strong> A connector you add sends what its job needs to that service, with your own credentials.</li>
   <li><strong>Pairing.</strong> A paired phone and desktop talk over your own network.</li>
-  <li><strong>Export.</strong> You can export the decisions, record and documents as one file and share it where you choose.</li>
+  <li><strong>Export.</strong> You can export the last 30 days of decisions, record and documents as one file and share it where you choose.</li>
 </ul>
 
 <h2>Purchases</h2>
 <p>The one unlock is bought through the App Store or Google Play. The store handles the payment; the app never sees your card and receives only whether the purchase is yours.</p>
 
 <h2>Your age</h2>
-<p>Where the law requires it, the app asks the store for your age range at first launch. It uses the answer in that session and does not store it. SoloINC is for people 13 and over and is not directed to children.</p>
+<p>The app asks the store for your age range each time it starts, so it can follow the law where one applies. It uses the answer in that session and does not store it. SoloINC is for people 13 and over and is not directed to children.</p>
 
 <h2>Face ID, Touch ID, fingerprint</h2>
 <p>Before an answer is sent, the system checks you (Face ID, Touch ID or the passcode; the fingerprint or the screen lock). The app receives only pass or fail, never a fingerprint or a face.</p>
